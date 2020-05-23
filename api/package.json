@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@redwoodjs/api": "^0.7.0"
+    "@redwoodjs/api": "^0.7.0",
+    "@sanity/client": "^1.149.13"
   }
 }
