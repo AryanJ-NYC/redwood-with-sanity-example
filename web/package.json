@@ -8,6 +8,7 @@
   "dependencies": {
     "@redwoodjs/router": "^0.7.0",
     "@redwoodjs/web": "^0.7.0",
+    "@sanity/image-url": "^0.140.19",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

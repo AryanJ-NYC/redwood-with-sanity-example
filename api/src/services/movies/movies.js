@@ -1,4 +1,4 @@
-import { sanity } from 'src/lib/sanity'
+import { sanity } from '../../lib/sanity'
 
 const moviesQuery = /* groq */ `*[_type == "movie"]`
 export const movies = () => {
