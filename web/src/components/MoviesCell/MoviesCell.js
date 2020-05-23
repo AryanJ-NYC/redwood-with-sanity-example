@@ -1,3 +1,5 @@
+import { Link, routes } from '@redwoodjs/router'
+
 import { urlFor } from 'src/lib/sanity'
 
 export const QUERY = gql`
@@ -25,7 +27,12 @@ export const Failure = ({ error }) => <div>Error: {error.message}</div>
 export const Success = ({ movies }) => {
   return movies.map((movie) => {
     return (
-      <img key={movie.slug} src={urlFor(movie.poster.asset).width(200).url()} />
+      <Link
+        key={movie.slug.current}
+        to={routes.movieDetail({ slug: movie.slug.current })}
+      >
+        <img src={urlFor(movie.poster.asset).width(200).url()} />
+      </Link>
     )
   })
 }
