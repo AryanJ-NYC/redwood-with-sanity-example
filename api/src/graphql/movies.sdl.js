@@ -11,6 +11,6 @@ export const schema = gql`
 
   type Query {
     movies: [Movie!]!
-    movie(id: String!): Movie!
+    movie(slug: String!): Movie!
   }
 `

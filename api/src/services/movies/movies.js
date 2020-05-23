@@ -5,7 +5,7 @@ export const movies = () => {
   return sanity.fetch(moviesQuery)
 }
 
-const movieBySlugQuery = /* groq */ `*[_type == "movie" && slug.current == $slug]`
+const movieBySlugQuery = /* groq */ `*[_type == "movie" && slug.current == $slug][0]`
 export const movie = ({ slug }) => {
   return sanity.fetch(movieBySlugQuery, { slug })
 }
