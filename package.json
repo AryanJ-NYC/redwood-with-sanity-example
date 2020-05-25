@@ -35,7 +35,7 @@
   ],
   "scripts": {
     "build": "yarn build:api && yarn rw build web",
-    "build:api": "cd api/; yarn cross-env NODE_ENV=production babel src --out-dir dist",
+    "build:api": "cd api/; NODE_ENV=production babel src --out-dir dist",
     "build:web": "cd web/; NODE_ENV=development babel src --out-dir dist"
   }
 }
