@@ -24,9 +24,7 @@ describe('MovieCell', () => {
   })
 
   it('Success renders successfully', () => {
-    render(
-      <Success userExample={{ movie: { objectKey: 'objectValue' } }} />
-    )
+    render(<Success userExample={{ movie: { objectKey: 'objectValue' } }} />)
     expect(
       screen.queryByText('{"movie":{"objectKey":"objectValue"}}')
     ).toBeInTheDocument()
