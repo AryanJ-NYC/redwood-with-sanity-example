@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "nfbwci30",
+    "dataset": "production"
+  },
   "project": {
     "name": "movie-faux-app"
-  },
-  "api": {
-    "projectId": "mpdmjlpg",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

@@ -2,7 +2,7 @@ import sanityClient from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 
 export const sanity = sanityClient({
-  projectId: 'mpdmjlpg',
+  projectId: process.env.SENTRY_PROJECT_ID,
   dataset: 'production',
   useCdn: true,
 })
